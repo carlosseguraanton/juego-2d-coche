@@ -21,7 +21,7 @@ public final class Sprite {
 	
 	public static final Sprite asfalto = new Sprite(32, 1, 1, HojaSprites.hojaCoches);
 	
-	public static final Sprite coche00 = new Sprite(1024, 0, 0, HojaSprites.hojaCoches);
+//	public static final Sprite coche00 = new Sprite(1024, 0, 0, HojaSprites.hojaCoches);
 //	public static final Sprite coche01 = new Sprite(1024, 0, 1, HojaSprites.hojaCoches);
 //	public static final Sprite coche02 = new Sprite(1024, 0, 2, HojaSprites.hojaCoches);
 //	public static final Sprite coche03 = new Sprite(1024, 0, 3, HojaSprites.hojaCoches);
@@ -69,8 +69,6 @@ public final class Sprite {
 				int indexDelPixelATransferir = posicionFinalX + posicionFinalY * this.hojaSprites.getAncho();
 
 				int valorDelPixelATransferir = this.hojaSprites.pixeles[indexDelPixelATransferir];
-					
-//				System.out.println(valorDelPixelATransferir);
 				
 				pixeles[indexDelPixelAOcupar] = valorDelPixelATransferir;
 				

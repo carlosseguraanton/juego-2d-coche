@@ -54,12 +54,12 @@ public final class Pantalla {
 						
 						int indexDelPixelAOcupar = posicionX + posicionY * ancho;
 						
-						int posicionX_ConMascaraAplicada = x & mascaraSprite;
-						int posicionY_ConMascaraAplicada = y & mascaraSprite;
+						int posicionFinalX = x & mascaraSprite;
+						int posicionFinalY = y & mascaraSprite;
 						
-						int indexDelPixelATransferir = posicionX_ConMascaraAplicada + posicionY_ConMascaraAplicada * lado;
+						int indexDelPixelATransferir = posicionFinalX + posicionFinalY * lado;
 
-						int valorDelPixelATransferir = Sprite.coche00.pixeles[indexDelPixelATransferir];
+						int valorDelPixelATransferir = Sprite.asfalto.pixeles[indexDelPixelATransferir];
 							
 						pixeles[indexDelPixelAOcupar] = valorDelPixelATransferir;
 
